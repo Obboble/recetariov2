@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas con Cáscaras de Papa | Receta Sostenible</title>
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --secondary: #8BC34A;
+            --accent: #CDDC39;
+            --dark: #2E7D32;
+            --light: #F1F8E9;
+            --text: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f9f9f9;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .recipe-container {
+            max-width: 700px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .recipe-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .recipe-title {
+            margin: 0;
+            font-size: 2.3rem;
+            font-weight: 700;
+        }
+        
+        .recipe-subtitle {
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        
+        .recipe-section {
+            padding: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .recipe-section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            color: var(--dark);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2:before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: var(--accent);
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+        
+        .ingredient-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .ingredient-card {
+            background-color: var(--light);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .instruction-steps {
+            counter-reset: step-counter;
+            padding-left: 5px;
+        }
+        
+        .step {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            min-height: 30px;
+        }
+        
+        .step:before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: var(--primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .nutrition-fact {
+            background-color: var(--light);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nutrition-fact:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 100%;
+            background-color: var(--primary);
+        }
+        
+        .nutrition-title {
+            color: var(--dark);
+            margin-top: 0;
+        }
+        
+        @media (max-width: 600px) {
+            .recipe-title {
+                font-size: 1.8rem;
+            }
+            
+            .recipe-section {
+                padding: 20px;
+            }
+            
+            .ingredient-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="recipe-container">
+        <p><a href="../index.html">| | | Página principal</p></a>
+        <div class="recipe-header">
+            <h1 class="recipe-title">HAMBURGUESAS CON CÁSCARAS DE PAPA</h1>
+            <div class="recipe-subtitle">Deliciosa forma de aprovechar los nutrientes que normalmente desecharías</div>
+        </div>
+        
+        <div class="recipe-section">
+            <h2>Ingredientes</h2>
+            <div class="ingredient-grid">
+                <div class="ingredient-card">
+                    <strong>2 tazas</strong> de cáscaras de papa cocidas
+                </div>
+                <div class="ingredient-card">
+                    <strong>1 huevo</strong>
+                </div>
+                <div class="ingredient-card">
+                    <strong>½ taza</strong> de avena o pan rallado
+                </div>
+                <div class="ingredient-card">
+                    Ajo y cebolla al gusto
+                </div>
+                <div class="ingredient-card">
+                    Sal, orégano, comino
+                </div>
+            </div>
+        </div>
+        
+        <div class="recipe-section">
+            <h2>Preparación</h2>
+            <div class="instruction-steps">
+                <div class="step">
+                    <strong>Hervir las cáscaras:</strong> Cocina las cáscaras en agua con sal durante 15 minutos hasta que estén blandas.
+                </div>
+                <div class="step">
+                    <strong>Triturar:</strong> Escurre y machaca con tenedor o procesa para hacer una pasta gruesa.
+                </div>
+                <div class="step">
+                    <strong>Mezclar:</strong> Agrega el huevo, avena, cebolla, ajo y condimentos. Mezcla hasta formar una masa moldeable.
+                </div>
+                <div class="step">
+                    <strong>Formar hamburguesas:</strong> Divide la mezcla en porciones y dales forma redonda y aplanada.
+                </div>
+                <div class="step">
+                    <strong>Cocinar:</strong> Cocina en una sartén con poco aceite por 4-5 minutos de cada lado, hasta que estén doradas.
+                </div>
+                <div class="step">
+                    <strong>Servir:</strong> En pan de hamburguesa o con arroz y ensalada.
+                </div>
+            </div>
+        </div>
+        
+        <div class="recipe-section">
+            <div class="nutrition-fact">
+                <h3 class="nutrition-title">¡Dato Nutricional!</h3>
+                <p>La mayoría de personas pelan las papas y botan las cáscaras sin saber que estas contienen más fibra, hierro y potasio que el interior. Esta receta transforma esos restos en unas deliciosas hamburguesas vegetales llenas de nutrientes que normalmente desperdiciarías.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

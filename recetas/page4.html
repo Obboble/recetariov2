@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortilla de Pan Duro | Receta de Aprovechamiento</title>
+    <style>
+        :root {
+            --primary: #5D4037;
+            --secondary: #8D6E63;
+            --accent: #D7CCC8;
+            --text: #3E2723;
+            --light: #EFEBE9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+            padding: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .recipe-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .recipe-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .recipe-title {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        
+        .recipe-subtitle {
+            font-style: italic;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        .content-box {
+            padding: 25px;
+            border-bottom: 1px solid var(--accent);
+        }
+        
+        .content-box:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .ingredient-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .ingredient-list li {
+            padding: 8px 0;
+            border-bottom: 1px dotted var(--accent);
+            display: flex;
+            align-items: center;
+        }
+        
+        .ingredient-list li:before {
+            content: "•";
+            color: var(--secondary);
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .instruction-list {
+            padding-left: 20px;
+        }
+        
+        .instruction-list li {
+            margin-bottom: 12px;
+        }
+        
+        .tip-box {
+            background-color: var(--accent);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .recipe-title {
+                font-size: 1.8rem;
+            }
+            
+            .content-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="recipe-card">
+        <p><a href="../index.html">| | | Página principal</p></a>
+        <div class="recipe-header">
+            <h1 class="recipe-title">TORTILLA DE PAN DURO</h1>
+            <div class="recipe-subtitle">Transforma tu pan viejo en un plato delicioso</div>
+        </div>
+        
+        <div class="content-box">
+            <h2>Ingredientes</h2>
+            <ul class="ingredient-list">
+                <li>1 taza de pan viejo remojado</li>
+                <li>2 huevos</li>
+                <li>½ taza de queso rallado</li>
+                <li>Cebolla y pimiento (opcional)</li>
+                <li>Sal, pimienta, orégano al gusto</li>
+            </ul>
+        </div>
+        
+        <div class="content-box">
+            <h2>Instrucciones</h2>
+            <ol class="instruction-list">
+                <li><strong>Remojar el pan:</strong> Corta o desmenuza el pan en un bol y añade la leche. Deja reposar 10 minutos para que se ablande.</li>
+                <li><strong>Preparar la mezcla:</strong> Agrega los huevos batidos, el queso rallado y los vegetales picados. Sazona con sal y pimienta.</li>
+                <li><strong>Batir bien:</strong> Mezcla todo con un tenedor o batidor hasta que los ingredientes estén bien integrados.</li>
+                <li><strong>Cocinar:</strong> Calienta una sartén con un poco de aceite. Vierte la mezcla formando una tortilla gruesa.</li>
+                <li><strong>Dorar:</strong> Cocina a fuego medio por unos 6-8 minutos por cada lado, hasta que esté dorada por fuera y cocida por dentro.</li>
+                <li><strong>Servir:</strong> Puedes acompañarla con ensalada o salsa de tomate natural.</li>
+            </ol>
+        </div>
+        
+        <div class="content-box">
+            <div class="tip-box">
+                <h2>¿Sabías que?</h2>
+                <p>El pan duro no tiene por qué ir a la basura. Al mezclarlo con huevos y verduras, se transforma en una tortilla sabrosa y consistente. Esta receta es perfecta para aprovechar esos restos de pan que ya no están frescos, dándoles una segunda vida deliciosa.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

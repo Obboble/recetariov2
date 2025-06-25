@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galletas de Pulpa de Jugo | Receta Zero Waste</title>
+    <style>
+        :root {
+            --primary: #FF7043;
+            --secondary: #FFA726;
+            --accent: #FFCC80;
+            --dark: #E64A19;
+            --light: #FFF3E0;
+            --text: #5D4037;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .recipe-card {
+            max-width: 700px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .recipe-title {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            margin-top: 10px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        .section {
+            padding: 25px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        h2 {
+            color: var(--dark);
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2:before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 30px;
+            background-color: var(--secondary);
+            margin-right: 15px;
+            border-radius: 3px;
+        }
+        
+        .ingredients {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .ingredient {
+            background-color: var(--light);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .steps {
+            counter-reset: step;
+            padding-left: 5px;
+        }
+        
+        .step {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .step:before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: var(--primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .tip-box {
+            background-color: var(--light);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 6px solid var(--secondary);
+        }
+        
+        .tip-title {
+            color: var(--dark);
+            margin-top: 0;
+        }
+        
+        @media (max-width: 600px) {
+            .recipe-title {
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .ingredients {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="recipe-card">
+        <p><a href="../index.html">| | | Página principal</p></a>
+        <div class="header">
+            <h1 class="recipe-title">GALLETAS DE PULPA DE JUGO</h1>
+            <p class="subtitle">Aprovecha al máximo tus frutas y verduras</p>
+        </div>
+        
+        <div class="section">
+            <h2>Ingredientes</h2>
+            <div class="ingredients">
+                <div class="ingredient">
+                    <strong>1 taza</strong> de pulpa de jugo (zanahoria, manzana, remolacha, etc.)
+                </div>
+                <div class="ingredient">
+                    <strong>1 taza</strong> de avena en hojuelas
+                </div>
+                <div class="ingredient">
+                    <strong>1 plátano</strong> maduro
+                </div>
+                <div class="ingredient">
+                    <strong>2 cucharadas</strong> de miel, panela o azúcar mascabado
+                </div>
+                <div class="ingredient">
+                    <strong>1 cucharadita</strong> de canela en polvo
+                </div>
+                <div class="ingredient">
+                    <strong>½ cucharadita</strong> de esencia de vainilla (opcional)
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Instrucciones</h2>
+            <div class="steps">
+                <div class="step">
+                    <strong>Preparar la mezcla:</strong> En un bol, aplasta el plátano con un tenedor. Agrega la pulpa, avena, canela, miel y vainilla. Mezcla bien.
+                </div>
+                <div class="step">
+                    <strong>Formar galletas:</strong> Toma porciones de la mezcla, forma bolitas y aplánalas en una bandeja para hornear.
+                </div>
+                <div class="step">
+                    <strong>Hornear:</strong> Precalienta el horno a 180 °C. Hornea las galletas por 20-25 minutos, o hasta que estén firmes y doradas por debajo.
+                </div>
+                <div class="step">
+                    <strong>Enfriar:</strong> Deja enfriar antes de comer. Se pueden conservar en refrigeración por hasta 5 días.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="tip-box">
+                <h3 class="tip-title">¿Sabías que?</h3>
+                <p>Cuando haces jugo de frutas o verduras en extractor, queda una pulpa que suele terminar en la basura. Sin embargo, esta pulpa es rica en fibra y sabor, y se puede usar como base para galletas suaves y energéticas. ¡Una forma deliciosa de reducir el desperdicio de alimentos!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
